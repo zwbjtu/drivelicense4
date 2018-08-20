@@ -10,7 +10,7 @@ var isGoShipping = false;
 
 Page({
   data: {
-    motto: 'CET4WORD',
+    motto: 'KM4',
     userInfo: {},
     userInfo1: {
 avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avatar_default.jpg",
@@ -173,7 +173,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
   },
   onClickSelf:function(){
     wx.navigateTo({
-      url: '../challenge/challenge?id=31&frompageid=1',
+      url: '../challenge/challenge?id=25&frompageid=1',
     })
   },
   onClickFriend: function () {
@@ -187,7 +187,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
       this.showNotOK();
     } else {
       wx.navigateTo({
-        url: '../invitation/invitation?id=31&frompageid=2',
+        url: '../invitation/invitation?id=25&frompageid=2',
       })
     }
    
@@ -205,7 +205,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
 
   onClickStudy:function() {
     wx.navigateTo({
-      url: '../study/study?id=31&frompageid=4',
+      url: '../study/study?id=25&frompageid=4',
     })
   },
 
@@ -277,7 +277,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
   onShareAppMessage: function (res) {
     let that = this
     return {
-      title: '[有人@我]来试试好玩的单词学习工具吧！',
+      title: '[有人@我]在准备科目四？来试试超级好用的科目四模拟考试吧！',
       imageUrl: 'https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/share/share_invite_logo.png',
       path: 'pages/home/home',
       success: function (res) {

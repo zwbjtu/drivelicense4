@@ -433,7 +433,7 @@ Page({
     var that = this;
     if (ops.from == 'button') {
       return {
-        title: '[有人@我]来试试好玩的单词学习工具吧！',
+        title: '[有人@我]在准备科目四吗？来试试超级好用的科目四模拟考试吧！',
         path: 'pages/home/home',
         imageUrl: 'https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/share/share_invite_logo.png',
         success: function (res) {
@@ -446,7 +446,7 @@ Page({
       }
     } else {
       return {
-        title: '[有人@我]来试试好玩的单词学习工具吧！',
+        title: '[有人@我]在准备科目四吗？来试试超级好用的科目四模拟考试吧！',
         path: 'pages/home/home',
         imageUrl: 'https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/share/share_invite_logo.png',
         success: function (res) {
