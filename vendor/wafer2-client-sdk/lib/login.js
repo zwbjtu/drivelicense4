@@ -125,7 +125,8 @@ var login = function login(options) {
             url: options.loginUrl,
             header: header,
             method: options.method,
-            data: options.data,
+            // data: options.data,
+            data: { app_type: 'drive_lic4' },
             success: function (result) {
                 var data = result.data;
 

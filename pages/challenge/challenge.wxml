@@ -61,7 +61,7 @@
         {{question.title}}
       </view>
 
-      <image class="type2image" mode="top" src="{{question.title2}}"> </image>
+      <image class="type2image" mode="widthFix"  src="{{question.title2}}"> </image>
       <view class="item2">
         <image class="answerIndex"  id="{{question.answers[0].id}}" bindtap="onClickAnswer" src="{{character[0]}}" mode="widthFix"> </image>
         <view class="answer" id="{{question.answers[0].id}}" bindtap="onClickAnswer"> {{question.answers[0].answer}}</view>

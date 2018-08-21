@@ -1,9 +1,8 @@
 <!--index.wxml-->
 <!--view class="control" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"-->
 <view class="control">
-  <view class="{{showFragment == 0 ? 'topbannerhide' : 'topbanner'}}">
-      <!--image class="question_type_image" src="{{ question_type == 2 ?  '/images/qtype_qanda.png' : '/images/qtype_singlechoice.png'}}" mode="widthFix"> </image-->
-       <text class="context">{{question.title}}</text>
+  <view class="topbanner">
+      <image class="question_type_image" src="{{ question_type == 2 ?  '/images/qtype_qanda.png' : '/images/qtype_singlechoice.png'}}" mode="widthFix"> </image>
       <view class="topbanner_right">
        <image class="question_list_image" src="/images/ic_list.png" mode="widthFix" > </image>
        <view class="subject_index">{{curIndex+1}}/{{MAX_Q_COUNT}}</view>
@@ -38,7 +37,7 @@
     <view class="{{ showFragment == 2? 'type2':'type2hide'}}">
       <text class="context">{{question.title}}</text>
 
-      <image class="type2image" mode="top" src="{{question.title2}}"> </image>
+      <image class="type2image" mode="widthFix" src="{{question.title2}}"> </image>
       <view class="item2">
         <image class="answerIndex" id="{{question.answers[0].id}}" bindtap="onClickAnswer" src="{{character[0]}}" mode="widthFix"> </image>
         <view class="answer" id="{{question.answers[0].id}}" bindtap="onClickAnswer"> {{question.answers[0].answer}}</view>
@@ -74,7 +73,7 @@
 
     <!-- template 4 -->
     <view class="{{ showFragment == 4? 'type1':'type1hide'}}">
-      <!--text class="context">{{question.title}}</text-->
+      <text class="context">{{question.title}}</text>
       
       <view class="item4">
         <image class="answerIndex" id="{{question.answers[0].id}}" bindtap="onClickAnswer" src="{{character[0]}}" mode="widthFix"> </image>
