@@ -247,8 +247,9 @@ App({
     return level;
   },
   addChallengeCnt: function(num) {
+    console.log('addChallengeCnt num:' + num +'current totalChallenge:'+ this.globalData.achievementDetail.totalChallenge);
     this.globalData.achievementDetail.totalChallenge += num;
-    console.log('update achievementDetail:' + this.globalData.achievementDetail.totalChallenge);
+    console.log('addChallengeCnt done. new totalChallenge:' + this.globalData.achievementDetail.totalChallenge);
   },
 
   updateWinningStreak: function(num) {
