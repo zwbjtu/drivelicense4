@@ -6,7 +6,7 @@ var qcloud = require('../../vendor/wafer2-client-sdk/index');
 
 // 引入配置
 var config = require('../../config');
-var isGoShipping = false;
+var isGoShipping = true;
 
 Page({
   data: {
@@ -28,7 +28,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
     windowW:0,
     windowH:0,
     challenge:-1,
-    userRanking:100,
+    userRanking:0,
     scoreGap:900,
   },
   //事件处理函数
@@ -278,7 +278,7 @@ avatarUrl:"https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/home/avat
     let that = this
     return {
       title: '[有人@我]在准备科目四？来试试超级好用的科目四模拟考试吧！',
-      imageUrl: 'https://lg-6enwjric-1256925828.cos.ap-shanghai.myqcloud.com/share/share_invite_logo.png',
+      imageUrl: '/images/share_invite_logo.png',
       path: 'pages/home/home',
       success: function (res) {
         //getSystemInfo是为了获取当前设备信息，判断是android还是ios，如果是android
